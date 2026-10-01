@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'; // 1. เพิ่ม useEffect
 import { Link } from 'react-router-dom';
 import FeaturedCarousel from '../components/FeaturedCarousel';
 import { movies as localMovies } from '../data/data';
-import { getMovies } from '../api/tmdb'; // 2. เพิ่ม getMovies
+import { getMovies } from '../api/backend'; // 2. เพิ่ม getMovies
 
 const STEPS = [
   { n: 1, file: 'src/api/tmdb.js', what: 'เขียนส่วน fetch ใน getJSON' },
