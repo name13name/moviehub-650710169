@@ -37,4 +37,4 @@ test('มี token ใน localStorage แล้ว ต้องเห็นห�
   renderAt('/me/wishlist');
 
   expect(screen.getByRole('heading', { name: 'หน้าลับ' })).toBeInTheDocument();
-});
+}); 
