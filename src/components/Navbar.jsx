@@ -6,10 +6,11 @@ const linkClass = ({ isActive }) =>
 
 function Navbar() {
     const { isLoggedIn, isAdmin, member, logout } = useAuth();
-  ...
+    const navigate = useNavigate();
+    
           <NavLink to="/about" className={linkClass}>เกี่ยวกับ</NavLink>
           {isAdmin && <NavLink to="/admin" className={linkClass}>หลังบ้าน</NavLink>}
-  const navigate = useNavigate();
+  
 
   function handleLogout() {
     logout();
